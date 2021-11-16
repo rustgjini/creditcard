@@ -1,0 +1,16 @@
+[
+  {
+    "cardNumber": "3242 3432 4324 2344",
+    "nameInCard": "Rustem Gjini",
+    "expiryDate": "05/33",
+    "ccv": "333",
+    "id": 1
+  },
+  {
+    "nameInCard": "Joe Doe",
+    "cardNumber": "5552 3423 4234 2344",
+    "expiryDate": "02/22",
+    "ccv": "333",
+    "id": 2
+  }
+]

@@ -1,0 +1,23 @@
+$font-family: var(--font-primary);
+
+@font-face {
+  font-family: $font-family;
+  src: url("../../public/assets/fonts/lineto-circular-pro-book.woff2");
+  src: url("../../public/assets/fonts/lineto-circular-pro-book.woff")
+      format("woff"),
+    url("../../public/assets/fonts/lineto-circular-pro-book.ttf")
+      format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: var(--font-primary), sans-serif;
+  line-height: 1.7;
+  color: grey;
+}
+
+button {
+  font-family: var(--font-primary), sans-serif;
+}

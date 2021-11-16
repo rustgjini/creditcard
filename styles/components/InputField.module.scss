@@ -1,0 +1,52 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: var(--space-md);
+
+  & + & {
+    margin-top: var(--space-md);
+  }
+
+  &Error {
+    font-size: var(--text-sm);
+    padding-top: var(--space-xxs);
+    color: var(--color-danger);
+  }
+
+  &Icon {
+    width: 25px;
+    margin-right: 0;
+    position: relative;
+    height: 14px;
+    bottom: 30px;
+    align-self: flex-end;
+  }
+
+  &Label {
+    position: absolute;
+    top: 1.5rem;
+  }
+
+  &Element {
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: var(--text-md);
+    padding: var(--space-xxs) 0;
+    outline: 0;
+    border-bottom-color: var(--color-surface-1);
+
+    & + .inputFieldLabel {
+      color: var(--color-surface-4);
+      font-weight: 900;
+      transform: translateY(-1.5rem);
+    }
+
+    &::placeholder {
+      color: var(--color-surface-1);
+    }
+  }
+}

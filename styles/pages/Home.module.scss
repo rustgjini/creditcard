@@ -1,0 +1,25 @@
+.home {
+  &Header {
+    padding-bottom: var(--space-xl);
+
+    &Title {
+      font-size: var(--text-lg);
+      font-weight: 900;
+      color: var(--color-primary);
+    }
+    &Subtitle {
+      font-size: var(--text-md);
+    }
+  }
+
+  &CardContainer {
+    padding-bottom: var(--space-md);
+  }
+
+  &Cta {
+    padding-top: var(--space-xxxl);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 336px;
+  }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+  margin: var(--space-xl) var(--space-sm);
+  display: grid;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    display: inline-grid;
+  }
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -0.5 rem;
+  margin-left: -0.5 rem;
+}
+
+.col {
+  flex-basis: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}

@@ -1,0 +1,160 @@
+.creditCard {
+  position: relative;
+  width: 330px;
+  height: 192px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  margin: auto;
+
+  &Front {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    backface-visibility: hidden;
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius-sm);
+    background-size: cover;
+    background-color: red;
+    z-index: 0;
+    background-position-x: 55px;
+    overflow: hidden;
+  }
+
+  &Cover {
+    position: absolute;
+    flex-shrink: 0;
+    min-width: 82%;
+    min-height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 63px;
+    -webkit-mask-image: url("/assets/card-background-shape.svg");
+    mask-image: url("/assets/card-background-shape.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+  }
+
+  &Company {
+    position: absolute;
+    top: 1rem;
+    left: 1.6rem;
+    width: 64px;
+    height: 50px;
+  }
+
+  &Edit {
+    position: absolute;
+    bottom: 1.4rem;
+    right: 1.6rem;
+    transform: rotate(-10deg);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  &Info {
+    justify-content: flex-end;
+    margin-right: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 0 100%;
+
+    &Number {
+      color: var(--color-white);
+      font-style: normal;
+      font-size: var(--text-md);
+      font-weight: 600;
+      word-spacing: var(--text-sm);
+      flex: 0 0 25%
+    }
+
+    &Holder {
+      font-style: normal;
+      font-weight: 700;
+      // Existing font-sizes are not facilitating it correctly
+      font-size: calc(2 * var(--text-unit));
+      color: var(--color-white);
+      word-spacing: 0.4rem;
+    }
+  }
+
+  &Top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &Expires,
+  &Ccv {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-top: var(--space-xs);
+
+    &Text {
+      color: var(--color-surface-1);
+      width: 38px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: var(--text-xs);
+      margin-right: var(--space-xxs);
+      font-weight: bold;
+    }
+
+    &Date,
+    &Number {
+      color: #ffffff;
+      font-style: normal;
+      font-weight: 900;
+      font-size: var(--text-md);
+    }
+  }
+
+  &MasterCard {
+    .creditCardCover {
+      background-color: var(--color-secondary);
+    }
+
+    .creditCardFront {
+      background-color: var(--color-primary);
+    }
+
+    .creditCardNumber {
+      color: var(--color-surface-1);
+    }
+  }
+
+  &Visa {
+    .creditCardCover {
+      background-color: var(--color-visa-background);
+    }
+
+    .creditCardFront {
+      background-color: var(--color-visa-surface);
+    }
+
+    .creditCardNumber {
+      color: var(--color-surface-3);
+    }
+    .creditCardExpires,
+    .creditCardCcv {
+      &Text {
+        color: var(--color-surface-2);
+      }
+    }
+  }
+}
+
+.creditCardCcv {
+  padding-right: var(--space-sm);
+}

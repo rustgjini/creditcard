@@ -1,0 +1,65 @@
+.button {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: var(--space-sm) var(--space-xxxl);
+    display: inline-block;
+    font-weight: 700;
+    border-radius: var(--border-radius-lg);
+    transition: all 0.2s;
+    position: relative;
+    font-size: var(--text-md);
+    border: none;
+    cursor: pointer;
+    width: inherit;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(var(--color-surface-4), 0.2);
+
+    &::after {
+      transform: scaleX(1.1) scaleY(1.2);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(var(--color-surface-4), 0.2);
+  }
+
+  &Primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    &::after {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &Secondary {
+    color: var(--color-surface-2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-lg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &Animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}

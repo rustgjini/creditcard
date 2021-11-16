@@ -1,0 +1,40 @@
+:root {
+  --font-primary: "Lineto Circular Pro Book";
+  --font-secondary: serif;
+
+  --space-unit: 16px;
+  --space-xxs: calc(0.25 * var(--space-unit)); // 4px
+  --space-xs: calc(0.5 * var(--space-unit)); // 8px
+  --space-sm: calc(1 * var(--space-unit)); // 16px
+  --space-md: calc(1.5 * var(--space-unit)); // 24px
+  --space-lg: calc(2 * var(--space-unit)); // 32px
+  --space-xl: calc(2.5 * var(--space-unit)); // 40px
+  --space-xxl: calc(3 * var(--space-unit)); // 48px
+  --space-xxxl: calc(3.5 * var(--space-unit)); // 56px
+
+  --text-unit: 10px;
+  --text-xs: calc(1 * var(--text-unit)); // 10px
+  --text-sm: calc(1.4 * var(--text-unit)); // 14px
+  --text-md: calc(1.6 * var(--text-unit)); // 16px
+  --text-lg: calc(2.4 * var(--text-unit)); // 24px
+  --text-xl: calc(3 * var(--text-unit)); // 32px
+
+  --border-radius-unit: 16px;
+  --border-radius-sm: calc(1 * var(--border-radius-unit)); // 16px
+  --border-radius-md: calc(1.5 * var(--border-radius-unit)); // 24px
+  --border-radius-lg: calc(6.25 * var(--border-radius-unit)); // 100px
+
+  --color-primary: #4c00c2;
+  --color-secondary: #32007e;
+  --color-tetriary: #3b058e;
+  --color-neutral: #e5e5e5;
+  --color-white: #ffffff;
+  --color-surface-1: #d3d8e1;
+  --color-surface-2: #798291;
+  --color-surface-3: #444e5d;
+  --color-surface-4: #1a212c;
+  --color-success: #19ac51;
+  --color-danger: #fc484c;
+  --color-visa-surface: #00c9c6;
+  --color-visa-background: #03c4c2;
+}
